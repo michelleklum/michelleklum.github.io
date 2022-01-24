@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML and Forms</title>
+  </head>
+  <body>
+    <h1>HTML and Forms</h1>
+    <form
+      action="https://www.cs.hmc.edu/~rhodes/cgi-bin/query.py"
+      method="POST"
+    >
+      <div>
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="user_name"
+          placeholder="Enter name"
+        />
+      </div>
+
+      <div>
+        <label for="age">Age</label>
+        <input type="text" id="age" name="user_age" placeholder="Enter age" />
+      </div>
+
+      <div>
+        <input type="date" id="date" name="curr_date" />
+      </div>
+
+      <div>
+        <input
+          type="radio"
+          id="red"
+          name="color"
+          value="red"
+          checked="checked"
+        />
+        <label for="red">Red</label>
+
+        <input type="radio" id="green" name="color" value="green" />
+        <label for="green">Green</label>
+
+        <input type="radio" id="blue" name="color" value="blue" />
+        <label for="blue">Blue</label>
+      </div>
+
+      <div>
+        <input type="radio" id="north" name="compass_direction" value="north" />
+        <label for="north">North</label>
+
+        <input type="radio" id="south" name="compass_direction" value="south" />
+        <label for="south">South</label>
+
+        <input type="radio" id="east" name="compass_direction" value="east" />
+        <label for="east">East</label>
+
+        <input type="radio" id="west" name="compass_direction" value="west" />
+        <label for="west">West</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="hungry" name="feelings" value="hungry" />
+        <label for="hungry">Hungry</label>
+
+        <input type="checkbox" id="sad" name="feelings" value="sad" />
+        <label for="sad">Sad</label>
+
+        <input type="checkbox" id="short" name="feelings" value="short" />
+        <label for="short">Short</label>
+      </div>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
